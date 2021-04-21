@@ -33,5 +33,10 @@ public class Main {
         System.out.println("\n"+ newYearGift.getSweetsByQuantityOfSugar(20, 60));
 
 
+        OptionalTasks optionalTasks = new OptionalTasks();
+        optionalTasks.firstOptionalTask();
+        optionalTasks.sixthOptionalTask();
+        optionalTasks.fourthOptionalTask();
+
     }
 }
