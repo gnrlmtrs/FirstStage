@@ -1,0 +1,105 @@
+https://www.adidas.com/us
+
+1. Добавляем товар в корзину
+-Главная страница
+-Paul Smith ботинки на шнуровке
+-Выбираем размер
+-Добавить в корзину
+-Перейти в корзину
+Ожидаемый результат: товар добавлен в корзину
+
+2. Оформление заказа с неправильными данными
+-Main Page
+-Shoes
+-Concrete pair of shoes
+-Select size and colour
+-Add ot bag
+-Click view bag
+-If we enter a belarusian phone number, we accept an error message:
+Please check your telephone number.  
+Ожидаемый результат: окно с ошибкой
+
+3. Нахождение своего размера
+-Main Page
+-Shoes
+-Concrete pair of shoes
+-Select size and colour
+-Find my size
+-choose cm
+-Then we can see a table where sizes match to cm
+Ожидаемый результат: размер, соответсвующий сантиметрам
+
+4. Заказ сразу большого количества товаров
+-Main Page
+-Shoes
+-Concrete pair of shoes
+-Select size and colour
+-Add to bag
+-View bag
+-Choose a quantity of shoes
+Ожидаемый резульатт: изменение цены и количества товаров
+
+5. Проверка пустой корзины 
+-Main Page
+-Shoes
+-Concrete pair of shoes
+-Select size and colour
+-Add to bag
+-View bag
+-Delete shoes from your bag
+-We ll recieve a message: your bag is empty
+Once you add something to your bag, it will appear here. Ready to get started?
+Ожидаемый результат: сообщение, о том, что корзина пуста
+
+6. Выбор товара нескольких цветов
+-Main Page
+-Shoes
+-Concrete pair of shoes
+-Choose black colour and size 8
+-Add to bag
+-Concrete pair of shoes
+-Choose multicolour and size 8
+-Add to bag
+-View bag
+Ожидаемый результат: два товара в корзине
+
+7. Получение скидки
+-Main Page
+-Shoes
+-Concrete shoes
+-Select size and colour
+-Add ot bag
+-View Bag
+-Enter a promo OCTOBER
+Ожидаемый результат: окно, подтверждающее получение скидки
+
+8. Ввод неправильных данных через PayPal
+-Main Page
+-Shoes
+-Concrete shoes
+-Select size and colour
+-Add ot bag
+-View bag
+-Choose button PayPal
+-Enter incorrect mail
+-Неверный формат адреса 
+-Ожидаемы результат: 
+электронной почты или номера мобильного телефона 
+
+
+9. Обмен товара
+-Main page
+-Exchange & returns
+-Start your return
+-Enter an order number and email
+-Click find order
+-Then we ll choose a new pair of shoes
+Ожидаемый результат: заказ пропадет из активных
+
+10. Регистрация с неверынми данными
+-Main Page
+-Personal Account
+-Enter email without @
+-Enter name
+-Enter password
+Ожидаемый результат: окно об ошибке
