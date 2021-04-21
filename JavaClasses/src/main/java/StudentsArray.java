@@ -40,7 +40,6 @@ public class StudentsArray {
                 studList.add(students.get(i));
             }
         }
-
         for(int i = 0; i < studList.size(); i++){
             System.out.println("Student ID: " + studList.get(i).getId()  + " Its faculty: " + facultyName);
         }

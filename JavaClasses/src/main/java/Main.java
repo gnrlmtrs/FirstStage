@@ -49,7 +49,7 @@ public class Main {
         studentsArray.getListOfStudentsByGroup(facultyName, groupId, courseId);
 
         System.out.println("\n");
-        
+
         studentsArray.getStudentWhosBirthdayAfterParametrizedDate(LocalDate.of(2001, 3, 3));
 
     }
