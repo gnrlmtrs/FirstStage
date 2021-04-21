@@ -4,4 +4,4 @@ target
 /bin
 .idea
 /**/out
-/*.iml
+*.iml
