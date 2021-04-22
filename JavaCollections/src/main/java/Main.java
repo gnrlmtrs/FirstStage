@@ -9,6 +9,7 @@ import java.util.List;
 
 
 public class Main {
+
     public static void main(String[] args) {
         ArrayList<Sweets> sweetsList = new ArrayList<>();
 
@@ -37,6 +38,9 @@ public class Main {
         optionalTasks.firstOptionalTask();
         optionalTasks.sixthOptionalTask();
         optionalTasks.fourthOptionalTask();
+
+        System.out.println("\n\n");
+        optionalTasks.thirdOptionalTask();
 
     }
 }
