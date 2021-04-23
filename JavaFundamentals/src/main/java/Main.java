@@ -87,18 +87,10 @@ public class Main {
                 break;
         }
 
-        //optional tasks
-        //First optional task
 
-        int vals = 0;
-
-        System.out.println("Enter your numbers, please");
-        vals = scanner.nextInt();
-        List<Integer> intList = new ArrayList<>();
-        intList.add(vals);
-
-
-
+        OptionalTasks optionalTasks = new OptionalTasks();
+        optionalTasks.firstOptionalTask();
+        optionalTasks.secondOptionalTask();
     }
 
 }
