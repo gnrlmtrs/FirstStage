@@ -62,36 +62,6 @@ public class Student {
 
     }
 
-
-    Student(String lastName, String fatherName, String address, LocalDate birthdayDate,
-            String phoneNumber, String facultyName, int groupId, int courseId){
-        this.id = 1;
-        this.name = "Maxim";
-        this.lastName = lastName;
-        this.fatherName = fatherName;
-        this.address = address;
-        this.birthdayDate = birthdayDate;
-        this.phoneNumber = phoneNumber;
-        this.facultyName = facultyName;
-        this.groupId = groupId;
-        this.courseId = courseId;
-
-    }
-
-    Student(int id, String name, String lastName, String fatherName, String address, LocalDate birthdayDate,
-            String phoneNumber, String facultyName){
-        this.id = id;
-        this.name = name;
-        this.lastName = lastName;
-        this.fatherName = fatherName;
-        this.address = address;
-        this.birthdayDate = birthdayDate;
-        this.phoneNumber = phoneNumber;
-        this.facultyName = facultyName;
-        this.groupId = 3;
-        this.courseId = 3;
-    }
-
     @Override
     public String toString(){
         return  "Id: " + id + "\nName: " + name + "\nLastname: " + lastName + "\nFathername: " +

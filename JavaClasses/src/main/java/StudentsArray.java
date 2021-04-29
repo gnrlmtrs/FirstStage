@@ -27,18 +27,29 @@ public class StudentsArray {
     }
 
     public void printAllStudents(){
-        for(int i = 0; i < students.size(); i++){
-            System.out.println(students.get(i).toString());
+        if(!students.isEmpty()) {
+            for (int i = 0; i < students.size(); i++) {
+                System.out.println(students.get(i).toString());
+            }
         }
+        else{
+            System.out.println("List of students is empty. Add students and try again.");
+        }
+
     }
 
 
     public void getStudentByFaculty(String facultyName){
         List<Student> studList = new ArrayList<Student>();
-        for(int i = 0; i < students.size(); i++){
-            if(students.get(i).getFacultyName().equals(facultyName)) {
-                studList.add(students.get(i));
+        if(!students.isEmpty()) {
+            for (int i = 0; i < students.size(); i++) {
+                if (students.get(i).getFacultyName().equals(facultyName)) {
+                    studList.add(students.get(i));
+                }
             }
+        }
+        else{
+            System.out.println("List of students is empty. Add students and try again.");
         }
         for(int i = 0; i < studList.size(); i++){
             System.out.println("Student ID: " + studList.get(i).getId()  + " Its faculty: " + facultyName);
@@ -50,22 +61,31 @@ public class StudentsArray {
 
 
     public List<Student> getListOfStudentByFacultyAndCourse(){
-        for(int i = 0; i < students.size(); i++){
+        if(!students.isEmpty()) {
             students.sort(Comparator.comparing(Student::getGroupId));
             students.sort(Comparator.comparing(Student::getFacultyName));
             return students;
         }
-        return null;
+        else{
+            System.out.println("List of students is empty. Add students and try again.");
+            return null;
+        }
+
     }
 
 
     public void getListOfStudentsByGroup(String facultyName, int groupId, int courseId){
         List<Student> studList = new ArrayList<Student>();
-        for(int i = 0; i < students.size(); i++){
-            if(students.get(i).getFacultyName().equals(facultyName) &&
-                    students.get(i).getGroupId() == groupId &&
-                    students.get(i).getCourseId() == courseId)
-               studList.add(students.get(i));
+        if(!students.isEmpty()) {
+            for (int i = 0; i < students.size(); i++) {
+                if (students.get(i).getFacultyName().equals(facultyName) &&
+                        students.get(i).getGroupId() == groupId &&
+                        students.get(i).getCourseId() == courseId)
+                    studList.add(students.get(i));
+            }
+        }
+        else{
+            System.out.println("List of students is empty. Add students and try again.");
         }
         for(int i = 0; i < studList.size(); i++){
             System.out.println("Student's ID " + studList.get(i).getId() + " Student's faculty: " + facultyName +
@@ -75,10 +95,15 @@ public class StudentsArray {
 
     public void getStudentWhosBirthdayAfterParametrizedDate(LocalDate date){
         List<Student> studList = new ArrayList<Student>();
-        for(int i = 0; i < students.size(); i++){
-            if(students.get(i).getBirthdayDate().isAfter(date)){
-                studList.add(students.get(i));
+        if(!students.isEmpty()) {
+            for (int i = 0; i < students.size(); i++) {
+                if (students.get(i).getBirthdayDate().isAfter(date)) {
+                    studList.add(students.get(i));
+                }
             }
+        }
+        else{
+            System.out.println("List of students is empty. Add students and try again.");
         }
 
         for(int i = 0; i < studList.size(); i++){
