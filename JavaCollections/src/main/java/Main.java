@@ -32,7 +32,7 @@ public class Main {
         int choice = 0;
         Scanner scan = new Scanner(System.in);
         do{
-            System.out.println("Press 0 to exit from program");
+            System.out.println("\n\nPress 0 to exit from program");
             System.out.println("Press 1 to get weight of new year gift");
             System.out.println("Press 2 to sort sweets by quantity of sugar");
             System.out.println("Press 3 to get sweets by quantity of sugar between some values");
@@ -40,7 +40,7 @@ public class Main {
             System.out.println("Press 5 sixth optional task");
             System.out.println("Press 6 fourth optional task");
             System.out.println("Press 7 third optional task");
-
+            System.out.println();
             while(!scan.hasNextInt()){
                 scan.next();
             }
@@ -61,7 +61,8 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println("\n"+ newYearGift.getSweetsByQuantityOfSugar(20, 60));
+                    System.out.println("Sweets with sugar between some values: " +
+                            newYearGift.getSweetsByQuantityOfSugar(20, 60));
                     break;
                 case 4:
                     optionalTasks.firstOptionalTask();
